@@ -1,0 +1,20 @@
+# Android/Java heap dumps & profiler artifacts
+# Gradle
+.gradle/
+**/build/
+*.iml
+/local.properties
+
+# Android Studio
+.idea/
+.cxx/
+
+# Profiling & captures
+captures/
+*.hprof
+*.trace
+*.mp4
+
+# Keystores (keep only if intentional)
+*.jks
+*.keystore
