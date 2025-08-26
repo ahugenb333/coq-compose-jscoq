@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  wiremock:
+    image: wiremock/wiremock:3.6.0
+    ports: ["8081:8080"]
+    command: ["--verbose","--global-response-templating","--disable-gzip"]
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files

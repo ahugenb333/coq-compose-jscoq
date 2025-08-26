@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/v1/sessions"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "session_id": "s_{{randomValue length=8 type='ALPHANUMERIC'}}"
+    }
+  },
+  "name": "Create session",
+  "priority": 1
+}

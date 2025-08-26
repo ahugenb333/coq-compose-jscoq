@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/v1/suggest"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "cursor": "{{jsonPath request.body '$.cursor'}}",
+      "goal": {
+        "hash": "g:{{randomValue length=8 type='HEXADECIMAL'}}",
+        "ty": "{{#pickRandom}}forall n, n+n = 2*n|forall x, x = x|True{{/pickRandom}}",
+        "ctx": [
+          "n:nat"
+        ]
+      },
+      "tactics": [
+        {
+          "t": "{{#pickRandom}}intros|simpl|lia|auto{{/pickRandom}}",
+          "score": 0.8
+        },
+        {
+          "t": "{{#pickRandom}}simpl|ring|auto{{/pickRandom}}",
+          "score": 0.6
+        }
+      ]
+    },
+    "fixedDelayMilliseconds": 150
+  },
+  "name": "Suggest",
+  "priority": 1
+}
