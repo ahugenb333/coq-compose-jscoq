@@ -1,88 +1,84 @@
-    # --- Gradle ---
-    .gradle/
-    **/build/
-    !**/src/**/build/
-    **/out/
-    build/
-    gradle-app.setting
-    gradle-app.iml
-    gradle-wrapper.jar
-    gradle-wrapper.properties
+# --- Gradle (keep gradle/wrapper/* tracked) ---
+.gradle/
+**/.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
-    # Local properties
-    /local.properties
+local.properties
+gradle-local.properties
+*.iml
+.kotlin/
 
-    # --- IntelliJ IDEA / Android Studio ---
-    .idea/
-    .idea/**/workspace.xml
-    .idea/**/tasks.xml
-    .idea/**/usage.statistics.xml
-    .idea/**/dictionaries
-    .idea/**/shelf
-    .cxx/
-    *.iml
-    *.ipr
-    *.iws
+# --- Android Studio / IntelliJ ---
+.idea/
+*.ipr
+*.iws
+.cxx/
+.externalNativeBuild/
+captures/
 
-    # --- Miscellaneous ---
-    .DS_Store
-    *.swp
-    *.swo
-    .vscode/
-    .project
-    .classpath
-    .settings/
+# --- Android build outputs ---
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
 
-    # --- Captures & Profiling ---
-    captures/
-    *.hprof
-    *.trace
-    *.mp4
+# --- iOS / Xcode ---
+**/Pods/
+DerivedData/
+*.xcuserstate
+**/xcuserdata/
+*.dSYM/
+*.dSYM.zip
+*.ipa
+*.hprof
 
-    # --- Keystores (keep only if intentional) ---
-    *.jks
-    *.keystore
+# Track Xcode project structure, ignore user-specific state
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
 
-    # --- Crashlytics, Fabric, etc ---
-    /fabric.properties
+# --- Kotlin Multiplatform / Native ---
+*.klib
+*.kexe
 
-    # --- Local Signing Configs ---
-    signing.properties
+# --- jsCoq assets (copy locally; see assets/jscoq/README.md) ---
+*.wasm
+**/assets/jscoq/**
+!**/assets/jscoq/README.md
 
-    # --- Kotlin Multiplatform (KMP) ---
-    kotlin/
-    bin/
-    *.klib
-    ios/
-    *.dSYM/
-    *.kexe
-    *.kotlin_module
+# --- Node (future JS/Wasm targets) ---
+node_modules/
 
-    # --- Node / JS related for KMP JS target ---
-    node_modules/
-    npm-debug.log
-    yarn.lock
-    pnpm-lock.yaml
+# --- Secrets & signing ---
+*.jks
+*.keystore
+*.env
+.env
+signing.properties
+/fabric.properties
 
-    # --- Environment files ---
-    *.env
-    .env
+# --- OS junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
 
-    # --- Mac OS & Linux system files ---
-    .DS_Store
-    .AppleDouble
-    .LSOverride
-    Thumbs.db
-    Desktop.ini
+# --- Logs & temp ---
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
 
-    # --- Other common ignores ---
-    *.log
-    *.tmp
-    *.bak
-    *.orig
-    *.rej
-
-    # --- Local configuration (do not commit) ---
-    .local/
-    .envrc
-    gradle-local.properties
+# --- Editor ---
+.vscode/

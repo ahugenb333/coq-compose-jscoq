@@ -1,8 +1,0 @@
-{
-  "buildPath": ":",
-  "projectPath": ":core:engine",
-  "moduleId": {
-    "groupId": "coq-compose-jscoq.core",
-    "moduleId": "engine"
-  }
-}
