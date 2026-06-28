@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="proof">
+    <output-path>$PROJECT_DIR$/feature/proof/build/libs</output-path>
+    <root id="archive" name="proof.jar" />
+  </artifact>
+</component>

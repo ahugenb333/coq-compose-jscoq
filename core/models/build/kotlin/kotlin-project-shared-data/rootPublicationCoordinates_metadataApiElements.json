@@ -1,0 +1,8 @@
+{
+  "buildPath": ":",
+  "projectPath": ":core:models",
+  "moduleId": {
+    "groupId": "coq-compose-jscoq.core",
+    "moduleId": "models"
+  }
+}

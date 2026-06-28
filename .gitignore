@@ -1,20 +1,88 @@
-# Android/Java heap dumps & profiler artifacts
-# Gradle
-.gradle/
-**/build/
-*.iml
-/local.properties
+    # --- Gradle ---
+    .gradle/
+    **/build/
+    !**/src/**/build/
+    **/out/
+    build/
+    gradle-app.setting
+    gradle-app.iml
+    gradle-wrapper.jar
+    gradle-wrapper.properties
 
-# Android Studio
-.idea/
-.cxx/
+    # Local properties
+    /local.properties
 
-# Profiling & captures
-captures/
-*.hprof
-*.trace
-*.mp4
+    # --- IntelliJ IDEA / Android Studio ---
+    .idea/
+    .idea/**/workspace.xml
+    .idea/**/tasks.xml
+    .idea/**/usage.statistics.xml
+    .idea/**/dictionaries
+    .idea/**/shelf
+    .cxx/
+    *.iml
+    *.ipr
+    *.iws
 
-# Keystores (keep only if intentional)
-*.jks
-*.keystore
+    # --- Miscellaneous ---
+    .DS_Store
+    *.swp
+    *.swo
+    .vscode/
+    .project
+    .classpath
+    .settings/
+
+    # --- Captures & Profiling ---
+    captures/
+    *.hprof
+    *.trace
+    *.mp4
+
+    # --- Keystores (keep only if intentional) ---
+    *.jks
+    *.keystore
+
+    # --- Crashlytics, Fabric, etc ---
+    /fabric.properties
+
+    # --- Local Signing Configs ---
+    signing.properties
+
+    # --- Kotlin Multiplatform (KMP) ---
+    kotlin/
+    bin/
+    *.klib
+    ios/
+    *.dSYM/
+    *.kexe
+    *.kotlin_module
+
+    # --- Node / JS related for KMP JS target ---
+    node_modules/
+    npm-debug.log
+    yarn.lock
+    pnpm-lock.yaml
+
+    # --- Environment files ---
+    *.env
+    .env
+
+    # --- Mac OS & Linux system files ---
+    .DS_Store
+    .AppleDouble
+    .LSOverride
+    Thumbs.db
+    Desktop.ini
+
+    # --- Other common ignores ---
+    *.log
+    *.tmp
+    *.bak
+    *.orig
+    *.rej
+
+    # --- Local configuration (do not commit) ---
+    .local/
+    .envrc
+    gradle-local.properties
