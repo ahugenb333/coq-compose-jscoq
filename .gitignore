@@ -24,6 +24,8 @@ captures/
 *.aab
 *.ap_
 *.dex
+
+# JVM heap dumps (Android Studio profiler)
 *.hprof
 
 # --- iOS / Xcode ---
@@ -34,7 +36,6 @@ DerivedData/
 *.dSYM/
 *.dSYM.zip
 *.ipa
-*.hprof
 
 # Track Xcode project structure, ignore user-specific state
 *.xcodeproj/*
